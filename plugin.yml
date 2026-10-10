@@ -1,0 +1,20 @@
+name: NitroCombat
+version: '${project.version}'
+main: dev.nitro.combat.NitroCombat
+api-version: '1.21'
+author: Blue
+description: Nitro Community Plugin - prevents combat logging with a combat tag.
+
+commands:
+  nitrocombat:
+    description: NitroCombat admin command
+    usage: /nitrocombat reload
+    aliases: [nc, combatlog]
+
+permissions:
+  nitrocombat.admin:
+    description: Allows reloading the config
+    default: op
+  nitrocombat.bypass:
+    description: Immune to the combat tag
+    default: false

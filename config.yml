@@ -1,0 +1,29 @@
+# ==========================================
+#   NitroCombat - Nitro Community Plugin
+# ==========================================
+
+# Combat tag duration (seconds)
+combat-duration: 15
+
+# Kill players who disconnect while in combat (their items drop)
+kill-on-quit: true
+
+# Announce to the whole server when someone combat logs
+broadcast-combatlog: true
+
+# Block commands while in combat
+block-commands: true
+allowed-commands:
+  - msg
+  - tell
+  - r
+  - reply
+
+messages:
+  tagged: "&c&lCOMBAT! &7Do not log out for &e%time% seconds&7."
+  untagged: "&a&lSAFE! &7You are no longer in combat."
+  actionbar: "&cCombat &8» &e%time%s"
+  command-blocked: "&cYou cannot use commands while in combat!"
+  combatlog-broadcast: "&4&l⚠ &c%player% &7logged out in combat and was killed!"
+  reloaded: "&aNitroCombat config reloaded."
+  no-permission: "&cYou don't have permission."
